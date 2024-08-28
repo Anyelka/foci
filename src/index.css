@@ -36,24 +36,6 @@ h1 {
   line-height: 1.1;
 }
 
-@media (max-aspect-ratio: 3/4) {
-  .field-background {
-    z-index: -1;
-  }
-
-  .field {
-    transform: rotate(90deg);
-  }
-
-  .players {
-    transform: rotate(-90deg);
-  }
-
-  .player {
-    transform: translateZ(1111111);
-  }
-}
-
 .stadium-container {
   display: flex;
 
@@ -79,6 +61,7 @@ h1 {
 .field {
   background-color: #2f935e;
   aspect-ratio: 4 / 3;
+  max-height: 75vh;
 
   position: relative;
 }

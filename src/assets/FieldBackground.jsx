@@ -2,8 +2,8 @@ const FieldBackground = () => {
   return (
     <svg
       fill="#ffffff"
-      /* height="100%"
-      width="100%" */
+      height="100%"
+      width="100%"
       /* position="absolute" */
       /* top="50%"
       left="50%" */
@@ -12,7 +12,7 @@ const FieldBackground = () => {
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 72 496 360"
+      viewBox="-10 62 516 372"
       preserveAspectRatio="none"
       xml:space="preserve"
     >
