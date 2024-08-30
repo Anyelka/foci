@@ -2,11 +2,11 @@ import { useState } from "react";
 import Bench from "./Bench";
 import Field from "./Field";
 
-const Stadium = ({ players }) => {
-  const includeFirstN = 15;
+const INCLUDE_FIRST_N_PRECONFIG = 15;
 
-  const initStarters = players.slice(0, includeFirstN);
-  const initSubs = players.slice(includeFirstN + 1, players.length);
+const Stadium = ({ players }) => {
+  const initStarters = players.slice(0, INCLUDE_FIRST_N_PRECONFIG);
+  const initSubs = players.slice(INCLUDE_FIRST_N_PRECONFIG + 1, players.length);
 
   const [starters, setStarters] = useState(initStarters);
   const [subs, setSubs] = useState(initSubs);
