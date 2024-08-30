@@ -1,13 +1,8 @@
 const FieldBackground = () => {
   return (
     <svg
+      className="field-background"
       fill="#ffffff"
-      height="100%"
-      width="100%"
-      /* position="absolute" */
-      /* top="50%"
-      left="50%" */
-      /* transform="translateX(-50%) translateY(-50%)" */
       version="1.1"
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"

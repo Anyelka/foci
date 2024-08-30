@@ -1,19 +1,19 @@
-import Player from "./Player";
+import Sub from "./players/Sub";
 
-const Bench = ({ players }) => {
+const Bench = ({ players, addPlayer }) => {
   const renderPlayers = () => {
     return (
       players && (
         <div className="players">
           {players.map((player) => (
-            <Player name={player}></Player>
+            <Sub name={player} onClick={() => addPlayer(player)} />
           ))}
         </div>
       )
     );
   };
 
-  return <div className="bench">{/* {renderPlayers()} */}</div>;
+  return <div className="bench">{renderPlayers()}</div>;
 };
 
 export default Bench;
