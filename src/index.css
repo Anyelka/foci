@@ -108,16 +108,20 @@ h1 {
 }
 
 .players {
-  display: flex;
-  flex-wrap: wrap;
-
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
   padding: 50px;
   list-style: none;
+}
+
+.bench-players {
+  display: flex;
 }
 
 .player {
   position: relative;
   color: black;
+  text-align: center;
 
   z-index: 111;
 

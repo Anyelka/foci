@@ -1,22 +1,18 @@
 import FieldBackground from "../assets/FieldBackground";
+import "./../formations.css";
 import Starter from "./players/Starter";
 
 const Field = ({ players, removePlayer }) => {
-  const renderPlayersInFormation = () => {
-    if (players.length == 1) {
-    }
-    if (players.length == 2) {
-    }
-
-    return players.map((player) => (
-      <Starter name={player} onRemove={() => removePlayer(player)}></Starter>
-    ));
-  };
-
   const renderPlayers = () => {
     return (
       players && (
-        <div className="players">{renderPlayersInFormation(players)}</div>
+        <div
+          className={`players players-formation players-${players.length}-formation`}
+        >
+          {players.map((player) => (
+            <Starter name={player} onRemove={() => removePlayer(player)} />
+          ))}
+        </div>
       )
     );
   };

@@ -2,7 +2,7 @@ import { useState } from "react";
 import Bench from "./Bench";
 import Field from "./Field";
 
-const INCLUDE_FIRST_N_PRECONFIG = 15;
+const INCLUDE_FIRST_N_PRECONFIG = 1;
 
 const Stadium = ({ players }) => {
   const initStarters = players.slice(0, INCLUDE_FIRST_N_PRECONFIG);
