@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import FieldBackground from "../assets/FieldBackground";
+import FieldBackground from "./../assets/FieldBackground";
 import "./../formations.css";
 import Starter from "./players/Starter";
 
@@ -32,11 +32,18 @@ const Field = ({ players, removePlayer }) => {
           className={`players players-formation players-${players.length}-formation`}
         >
           {players.map((player) => (
-            <Starter name={player} onRemove={() => removePlayer(player)} />
+            <Starter
+              key={player.id}
+              id={player.id}
+              name={player.name}
+              onRemove={() => removePlayer(player)}
+            />
           ))}
-          <AnimatePresence>
-            {players.length > 18 && renderError()}
-          </AnimatePresence>
+          {
+            <AnimatePresence>
+              {players.length > 18 && renderError()}
+            </AnimatePresence>
+          }
         </div>
       )
     );

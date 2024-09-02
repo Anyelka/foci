@@ -6,7 +6,12 @@ const Bench = ({ players, addPlayer }) => {
       players && (
         <div className="players bench-players">
           {players.map((player) => (
-            <Sub name={player} onClick={() => addPlayer(player)} />
+            <Sub
+              key={player.id}
+              id={player.id}
+              name={player.name}
+              onClick={() => addPlayer(player)}
+            />
           ))}
         </div>
       )
