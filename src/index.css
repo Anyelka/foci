@@ -140,16 +140,32 @@ h1 {
 }
 
 .error-container {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  width: calc(100%-20px);
+  height: calc(100%-20px);
   position: absolute;
   display: grid;
   text-align: center;
   justify-content: center;
   align-items: center;
-  background: rgba(200, 250, 200, 0.85);
-  color: darkred;
+  background: rgba(224, 224, 224, 0.85);
+  color: #8b0000;
   z-index: 1111;
+}
+
+.back-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  /* filter: invert(8%) sepia(81%) saturate(5291%) hue-rotate(357deg)
+    brightness(95%) contrast(111%); */
+}
+
+.back-button-image {
+  max-width: 50px;
+  max-height: 50px;
+  background-color: transparent;
 }
