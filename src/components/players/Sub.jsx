@@ -5,11 +5,7 @@ const Sub = ({ id, name, onClick }) => {
     <Player
       id={id}
       name={name}
-      onHover={{
-        cursor: "pointer",
-        filter:
-          "invert(82%) sepia(35%) saturate(565%) hue-rotate(75deg) brightness(103%) contrast(101%)",
-      }}
+      onHoverFilter="invert(82%) sepia(35%) saturate(565%) hue-rotate(75deg) brightness(103%) contrast(101%)"
       onClick={onClick}
     />
   );

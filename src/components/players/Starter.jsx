@@ -5,11 +5,7 @@ const Starter = ({ id, name, onRemove: onClick }) => {
     <Player
       id={id}
       name={name}
-      onHover={{
-        cursor: "pointer",
-        filter:
-          "invert(13%) sepia(61%) saturate(7121%) hue-rotate(358deg) brightness(72%) contrast(96%)",
-      }}
+      onHoverFilter="invert(13%) sepia(61%) saturate(7121%) hue-rotate(358deg) brightness(72%) contrast(96%)"
       onClick={onClick}
     />
   );

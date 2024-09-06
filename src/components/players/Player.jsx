@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import Shirt from "./../../assets/shirt-black.svg";
 
-const Player = ({ id, name, onHover, onClick }) => {
+const Player = ({ id, name, onHoverFilter, onClick }) => {
   return (
     <motion.div
       id={`player-${id}`}
       className="player"
-      whileHover={onHover}
+      whileHover={{
+        scale: 1.1,
+        cursor: "pointer",
+        filter: onHoverFilter,
+      }}
       onClick={onClick}
       layoutId={`player-${id}`}
       layout
