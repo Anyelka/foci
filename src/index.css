@@ -85,8 +85,9 @@ h1 {
 }
 
 .field {
+  flex-grow: 1;
   background-color: #2f935e;
-  aspect-ratio: 4 / 3;
+  /* aspect-ratio: 4 / 3; */
   max-height: 75vh;
 
   position: relative;
@@ -102,19 +103,27 @@ h1 {
 
 .bench {
   background-color: #347a55;
-  aspect-ratio: 4 / 1;
+  /* aspect-ratio: 4 / 1; */
 
   overflow: overlay;
 }
 
 .players {
-  width: calc(100% - 100px);
-  height: calc(100% - 100px);
-  padding: 50px;
   list-style: none;
 }
 
+.field-players {
+  padding: 50px;
+  /* width & height: 100% - (padding*2) */
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+}
+
 .bench-players {
+  padding: 20px;
+  /* width & height: 100% - (padding*2) */
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
   justify-content: center;
   gap: 20px;
   display: flex;

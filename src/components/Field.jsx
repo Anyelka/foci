@@ -1,4 +1,4 @@
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import FieldBackground from "./../assets/FieldBackground";
 import "./../formations.css";
 import Error from "./Error";
@@ -13,7 +13,7 @@ const Field = ({ players, removePlayer }) => {
     return (
       players && (
         <div
-          className={`players players-formation players-${players.length}-formation`}
+          className={`players field-players players-formation players-${players.length}-formation`}
         >
           {players.map((player) => (
             <Starter
@@ -34,10 +34,10 @@ const Field = ({ players, removePlayer }) => {
   };
 
   return (
-    <div id="field" className="field">
+    <motion.div id="field" className="field" layout>
       {renderPlayers()}
       <FieldBackground />
-    </div>
+    </motion.div>
   );
 };
 

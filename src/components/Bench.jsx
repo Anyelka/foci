@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Sub from "./players/Sub";
 
 const Bench = ({ players, addPlayer }) => {
@@ -18,7 +19,11 @@ const Bench = ({ players, addPlayer }) => {
     );
   };
 
-  return <div className="bench">{renderPlayers()}</div>;
+  return (
+    <motion.div className="bench" layout>
+      {renderPlayers()}
+    </motion.div>
+  );
 };
 
 export default Bench;
