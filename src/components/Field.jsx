@@ -20,7 +20,7 @@ const Field = ({ players, removePlayer }) => {
               key={player.id}
               id={player.id}
               name={player.name}
-              onRemove={() => removePlayer(player)}
+              onClick={() => removePlayer(player)}
             />
           ))}
           {

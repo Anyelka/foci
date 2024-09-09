@@ -1,14 +1,7 @@
 import Player from "./Player";
 
 const Sub = ({ id, name, onClick }) => {
-  return (
-    <Player
-      id={id}
-      name={name}
-      onHoverFilter="invert(82%) sepia(35%) saturate(565%) hue-rotate(75deg) brightness(103%) contrast(101%)"
-      onClick={onClick}
-    />
-  );
+  return <Player id={id} name={name} onClick={onClick} action="ADD" />;
 };
 
 export default Sub;

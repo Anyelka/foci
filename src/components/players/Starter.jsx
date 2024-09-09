@@ -1,14 +1,7 @@
 import Player from "./Player";
 
-const Starter = ({ id, name, onRemove: onClick }) => {
-  return (
-    <Player
-      id={id}
-      name={name}
-      onHoverFilter="invert(13%) sepia(61%) saturate(7121%) hue-rotate(358deg) brightness(72%) contrast(96%)"
-      onClick={onClick}
-    />
-  );
+const Starter = ({ id, name, onClick }) => {
+  return <Player id={id} name={name} onClick={onClick} action="REMOVE" />;
 };
 
 export default Starter;

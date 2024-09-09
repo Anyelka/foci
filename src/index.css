@@ -121,6 +121,10 @@ h1 {
   list-style: none;
 }
 
+.field-players > .player {
+  margin: auto;
+}
+
 .field-players {
   padding: 50px;
   /* width & height: 100% - (padding*2) */
@@ -141,6 +145,7 @@ h1 {
 }
 
 .player {
+  width: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
