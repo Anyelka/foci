@@ -10,7 +10,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #242424cd;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -80,13 +80,20 @@ h1 {
   flex: 1;
   margin: 30px;
 
+  background-image: linear-gradient(
+    115deg,
+    #51624f 0%,
+    #2a831c 90%,
+    #55af28 100%
+  );
+
   /* show it in white for testing */
   /* background-color: white; */
 }
 
 .field {
   flex-grow: 1;
-  background-color: #2f935e;
+  background-color: rgb(47, 147, 94, 0);
   /* aspect-ratio: 4 / 3; */
   max-height: 75vh;
 
@@ -102,8 +109,10 @@ h1 {
 }
 
 .bench {
-  background-color: #347a55;
+  background-color: rgba(233, 240, 234, 0.25);
   /* aspect-ratio: 4 / 1; */
+  border-bottom: 5px solid rgb(253, 253, 190);
+  border-radius: 5px;
 
   overflow: overlay;
 }
@@ -120,10 +129,11 @@ h1 {
 }
 
 .bench-players {
-  padding: 20px;
+  margin: 10px;
+
   /* width & height: 100% - (padding*2) */
-  width: calc(100% - 40px);
-  height: calc(100% - 40px);
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
   justify-content: center;
   gap: 20px;
   display: flex;
@@ -131,9 +141,13 @@ h1 {
 }
 
 .player {
-  position: relative;
-  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+
+  color: black;
 
   z-index: 111;
 
@@ -147,8 +161,28 @@ h1 {
 .player-name {
 }
 
-.player-shirt {
+.player-icon-container {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   max-width: 80px;
+  max-height: 80px;
+}
+
+.player-shirt-icon {
+  max-width: 80px;
+}
+
+.player-action-icon {
+  position: absolute;
+  top: calc((80px - 40px) / 2);
+  left: calc((80px - 40px) / 2);
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
 }
 
 .error-container {
