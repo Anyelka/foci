@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Sub from "./players/Sub";
+import Sub from "../players/Sub";
 
 const Bench = ({ players, addPlayer }) => {
   const renderPlayers = () => {

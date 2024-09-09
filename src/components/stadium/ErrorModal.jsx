@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import BackButton from "./../assets/back-button.png";
 
-const Error = ({ onBack }) => {
+const ErrorModal = ({ onBack }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -28,4 +28,4 @@ const Error = ({ onBack }) => {
   );
 };
 
-export default Error;
+export default ErrorModal;

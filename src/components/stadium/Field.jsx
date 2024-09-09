@@ -1,8 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
-import FieldBackground from "./../assets/FieldBackground";
-import "./../formations.css";
-import Error from "./Error";
-import Starter from "./players/Starter";
+import FieldBackground from "../../assets/FieldBackground";
+import Starter from "../players/Starter";
+import "./../../formations.css";
 
 const Field = ({ players, removePlayer }) => {
   const removeLastPlayer = () => {
@@ -25,7 +24,7 @@ const Field = ({ players, removePlayer }) => {
           ))}
           {
             <AnimatePresence>
-              {players.length > 18 && <Error onBack={removeLastPlayer} />}
+              {players.length > 18 && <ErrorModal onBack={removeLastPlayer} />}
             </AnimatePresence>
           }
         </div>

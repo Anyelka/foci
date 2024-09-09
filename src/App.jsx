@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Stadium from "./components/Stadium";
+import Title from "./components/Title";
+import Stadium from "./components/stadium/Stadium";
 import { DUMMY_PLAYERS } from "./dummyData";
 
 function App() {
@@ -7,8 +8,8 @@ function App() {
 
   return (
     <>
-      {/* <h1>Foci</h1> */}
       <div className="stadium-container">
+        <Title />
         <Stadium players={players} />
       </div>
     </>
