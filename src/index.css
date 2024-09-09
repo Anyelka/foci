@@ -87,6 +87,8 @@ h1 {
     #55af28 100%
   );
 
+  border: 2px solid white;
+  border-radius: 5px;
   /* show it in white for testing */
   /* background-color: white; */
 }
