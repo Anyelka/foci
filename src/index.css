@@ -48,6 +48,9 @@ h1 {
   z-index: 1;
 
   /* border: 2px solid white; */
+  /* top border is to "blend" the title into the outer background more */
+  border-top: 2px solid #515151;
+
   border-bottom: 2px solid white;
   border-left: 2px solid white;
   border-right: 2px solid white;
